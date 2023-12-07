@@ -17,7 +17,7 @@
 .pointer {cursor: pointer;}
 
 body{
-  background-image: url("../public/background.jpg");
+  background-image: url("../public/bg.png");
   background-size: cover;
   font-family: 'Unbounded', cursive;
   font-size: medium;
