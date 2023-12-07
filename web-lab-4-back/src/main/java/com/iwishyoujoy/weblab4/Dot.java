@@ -27,14 +27,18 @@ public class Dot implements Serializable {
     }
 
     private void checkStatus() {
-        if (x > 0.0 && y > 0.0)
+        if(x >= 0.0 && y >= 0){
+            status = y <= r - x && x <= r;
+        }
+        else if (x < 0.0 && y > 0){
             status = false;
-        else if (x >= 0.0 && y <= 0.0)
-            status = x * x + y * y <= r * r;
-        else if (x <= 0.0 && y >= 0.0)
-            status = x >= -r / 2.0 && y <= r;
-        else if (x <= 0.0 && y <= 0.0)
-            status = -x <= 2.0 * y + r;
+        }
+        else if (x <= 0.0 && y <= 0){
+            status = x >= -r/2 && y >= -r;
+        }
+        else if (x > 0 && y < 0){
+            status = x*x + y*y <= r*r/4;
+        }
     }
 
     public float getX() {

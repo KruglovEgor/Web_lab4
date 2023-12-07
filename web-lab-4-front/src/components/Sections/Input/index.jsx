@@ -5,7 +5,6 @@ import toast from "react-hot-toast";
 import Graph from "../Graph";
 import store from "../../../store";
 import {useNavigate} from "react-router-dom";
-// import Belle from "belle";
 
 function Input() {
 
@@ -33,7 +32,6 @@ function Input() {
     const [dotData, setDotData] = useState([]);
 
     const navigate = useNavigate();
-    // const buttonBelle = Belle.Button;
 
     const NEGATIVE_R_ERROR = "Radius can't be less than 1!";
     const INVALID_Y_ERROR = "Y is out of range!";

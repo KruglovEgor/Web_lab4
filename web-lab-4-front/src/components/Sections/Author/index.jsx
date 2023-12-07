@@ -6,7 +6,7 @@ function Author(){
     return (
         <AppContainer>
             <div id="author" className="menu">
-                Skvortsova Darya 9006
+                Kruglov Egor, 333
             </div>
         </AppContainer>
     );

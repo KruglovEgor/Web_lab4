@@ -16,7 +16,7 @@ export const loginReducer = createSlice({
 })
 
 //selector function
-export const selectLogin = state => state.login.value;
+// export const selectLogin = state => state.login.value;
 
 // Action creators are generated for each case reducer function
 export const {setLogin, resetLogin} = loginReducer.actions;

@@ -3,15 +3,15 @@ import AppContainer  from "../../AppContainer";
 function Graph(props){
 
     function updateTriangle(r){
-        return ("150,150 " + String(150-50*r) + ",150 150," + String(150+25*r));
+        return ("150,150 " + String(150+50*r) + ",150 150," + String(150-50*r));
     }
 
     function updateRectangle(r){
-        return (String(150-25*r) + ",150 150,150 150," + String(150-50*r) + " " + String(150-25*r) + "," + String(150-50*r));
+        return (String(150-25*r) + ",150 150,150 150," + String(150+50*r) + " " + String(150-25*r) + "," + String(150+50*r));
     }
 
     function updateCircle(r){
-        return ("M" + String(150+50*r) + ",150 A" + String(50*r) + "," + String(50*r) + " 90 0,1 150," + String(150+50*r) + " L 150,150 Z");
+        return ("M" + String(150+25*r) + ",150 A" + String(25*r) + "," + String(25*r) + " 90 0,1 150," + String(150+25*r) + " L 150,150 Z");
     }
 
     function parseXCoord(x){
@@ -82,6 +82,7 @@ function Graph(props){
 
     return (
         <AppContainer>
+
             <svg id="graph" className="pointer" xmlns="http://www.w3.org/2000/svg" width="303px" height="300px" onMouseMove={mouseMoveListener} onClick={onClickListener}>
                 {/*Треугольник в третьей четверти*/}
                 <polygon id="triangle" points={updateTriangle(props.radius)}></polygon>

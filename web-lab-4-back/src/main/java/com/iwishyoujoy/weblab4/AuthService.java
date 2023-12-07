@@ -18,7 +18,7 @@ public class AuthService {
 
     public void register(String login, String password) {
         if (userRepository.findByLogin(login) != null) {
-            throw new ResponseStatusException(HttpStatus.CONFLICT, "Login has been taken");
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Login is taken");
         }
 
         User user = new User(login, getHash(password));

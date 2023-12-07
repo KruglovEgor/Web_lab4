@@ -8,8 +8,6 @@ import {Toaster} from "react-hot-toast";
 function MainPage() {
 
     const headerNavigation = [
-        {title: "Portfolio", link: "https://iwishyoujoy.ru/"},
-        {title: "Github", link: "https://github.com/iwishyoujoy"},
         {title: "Log out", link: "/"}
     ];
 
