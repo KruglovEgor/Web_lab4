@@ -1,4 +1,4 @@
-package com.iwishyoujoy.weblab4;
+package ru.itmo.weblab4;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

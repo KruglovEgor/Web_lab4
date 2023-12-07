@@ -1,4 +1,4 @@
-package com.iwishyoujoy.weblab4;
+package ru.itmo.weblab4;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

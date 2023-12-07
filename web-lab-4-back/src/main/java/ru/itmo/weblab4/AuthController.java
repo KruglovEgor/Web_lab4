@@ -1,4 +1,4 @@
-package com.iwishyoujoy.weblab4;
+package ru.itmo.weblab4;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

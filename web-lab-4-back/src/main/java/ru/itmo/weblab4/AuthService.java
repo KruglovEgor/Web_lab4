@@ -1,4 +1,4 @@
-package com.iwishyoujoy.weblab4;
+package ru.itmo.weblab4;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

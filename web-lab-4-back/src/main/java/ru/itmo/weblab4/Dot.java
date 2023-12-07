@@ -1,4 +1,4 @@
-package com.iwishyoujoy.weblab4;
+package ru.itmo.weblab4;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
