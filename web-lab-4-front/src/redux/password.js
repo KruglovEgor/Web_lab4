@@ -15,10 +15,8 @@ export const passwordReducer = createSlice({
     },
 })
 
-//selector function
 export const selectPassword = state => state.password.value;
 
-// Action creators are generated for each case reducer function
 export const {setPassword, resetPassword} = passwordReducer.actions;
 
 export default passwordReducer.reducer;
